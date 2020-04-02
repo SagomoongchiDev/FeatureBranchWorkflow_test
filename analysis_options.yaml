@@ -1,0 +1,51 @@
+include: package:effective_dart/analysis_options.1.2.0.yaml
+
+analyzer:
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+
+linter:
+  rules:
+    # Error Rule
+    - avoid_empty_else
+    - avoid_init_to_null
+    - avoid_return_types_on_setters
+    - avoid_web_libraries_in_flutter
+    - cancel_subscriptions
+    - close_sinks
+    - control_flow_in_finally
+    - empty_statements
+
+    # Style Rule
+    # Naming Style Convention
+    - camel_case_types
+    - camel_case_extensions
+    - constant_identifier_names
+    - package_names
+    - package_prefixed_library_names
+    - file_names
+    - library_names
+    - library_prefixes
+    - non_constant_identifier_names
+    # Coding Style Convention
+    - valid_regexps
+    - always_declare_return_types
+    - always_specify_types
+    - curly_braces_in_flow_control_structures
+    - hash_and_equals
+    - annotate_overrides
+    - await_only_futures
+    - empty_constructor_bodies
+    - implementation_imports
+    - test_types_in_equals
+    - unnecessary_brace_in_string_interps
+    - unnecessary_getters_setters
+    - unnecessary_statements
+    - unrelated_type_equality_checks
+    - avoid_setters_without_getters
+    - throw_in_finally
+    - type_init_formals
+    ## Dart Doc comment
+    - slash_for_doc_comments
+    - package_api_docs
